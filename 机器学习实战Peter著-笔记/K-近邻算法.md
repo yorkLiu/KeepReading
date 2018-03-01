@@ -1,15 +1,8 @@
-<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 formula1: $$n==x$$
 
 formula2: $$n!=x$$
 
-formula3: (m==y)
-
-formula4: [m!=y]
-
-formula5: \(k==z\)
-
-formula6: \[k!=z\]
 
 # K-近邻算法 (KNN)
 > K-近邻算法 (KNN)工作原理: 存在一个样本数据集合，也称作训练样本集，并且样本集中每个数据都存在标签，即我们知道样本集中第一数据与所属分类的对应关系。输入并没有标签的新数据后，将新的数据每个特征与样本集中数据对应的特征进行比较，然后算法提取样本集中特征相似数据(最近邻)的分类标签。一般来说，我们只选择样本数据休中前k个最相似的数据，这就是k-近邻算法的出处，通常k是不大于20的整数。
