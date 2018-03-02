@@ -1,9 +1,3 @@
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-formula1: $$n==x$$
-
-formula2: $$n!=x$$
-
-
 # K-近邻算法 (KNN)
 > K-近邻算法 (KNN)工作原理: 存在一个样本数据集合，也称作训练样本集，并且样本集中每个数据都存在标签，即我们知道样本集中第一数据与所属分类的对应关系。输入并没有标签的新数据后，将新的数据每个特征与样本集中数据对应的特征进行比较，然后算法提取样本集中特征相似数据(最近邻)的分类标签。一般来说，我们只选择样本数据休中前k个最相似的数据，这就是k-近邻算法的出处，通常k是不大于20的整数。
 
@@ -11,14 +5,24 @@ formula2: $$n!=x$$
 * 缺点: 计算复杂度高，空间复杂度高
 * 适用数据范围: 数值型和标称型
 
-## 距离计算公式
-* 1.欧氏距离公式, 计算两个向量点 xA和xB之间的距离
-   * <a href="https://www.codecogs.com/eqnedit.php?latex=\sqrt{(xA_0&space;-&space;xB_0)^{2}&space;&plus;&space;(xA_1&space;-&space;xB_1)^{2}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sqrt{(xA_0&space;-&space;xB_0)^{2}&space;&plus;&space;(xA_1&space;-&space;xB_1)^{2}}" title="\sqrt{(xA_0 - xB_0)^{2} + (xA_1 - xB_1)^{2}}" /></a>
-   * I.E: 点 （0,0）与 (1,2)之间的距离为:
-      * $$\sqrt{(1-0)^{2} + (2-0)^{2}}$$
-   * 点(1,0,0,1) 与 (7,6,9,4)之间的距离为:
-      * $$ \sqrt{(7-1)^{2} - (6-0)^{2} - (9-0)^{2} - (4-1)^{2}} $$
-      * Let $\text{S}_1(N) = \sum_{p=1}^N \text{E}(p)$
-      * "Let $\text{S}1(N) = \sum{p=1}^N \text{E}(p)$"
+**Note***: 如果浏览器无法正常显示该文本的`数学公司`, 请点击[安装GitHub with MathJax 插件](https://chrome.google.com/webstore/detail/github-with-mathjax/ioemnmodlmafdkllaclgeombjnmnbima/related)
 
-* 2.
+## 距离计算公式
+* 1.欧氏距离公式
+> 欧氏距离是最易于理解的一种距离计算方法，源自欧氏空间中两点间的距离公式
+> 计算两个向量点 xA和xB之间的距离,数学公式为:
+> $$d = \sqrt{(xA_0 - xB_0)^{2} + (xA_1 - xB_1)^{2}}$$
+  * I.E: 点 （0,0）与 (1,2)之间的距离为:
+  $$\sqrt{(1-0)^{2} + (2-0)^{2}}$$
+  * 点(1,0,0,1) 与 (7,6,9,4)之间的距离为:
+  $$ \sqrt{(7-1)^{2} - (6-0)^{2} - (9-0)^{2} - (4-1)^{2}} $$
+* 2.曼哈顿距离
+> 从名字就可以猜出这种距离的计算方法了。想象你在曼哈顿要从一个十字路口开车到另外一个十字路口，驾驶距离是两点间的直线距离吗？显然不是，除非你能穿越大楼。实际驾驶距离就是这个“曼哈顿距离”。而这也是曼哈顿距离名称的来源， 曼哈顿距离也称为 **城市街区距离(City Block distance)**。
+> 1. 二维平面两点a(x1,y1)与b(x2,y2)间的曼哈顿距离
+> $$d12= |x_1 - x_2| + |y_1 - y_2|$$
+> 2. 两个n维向量a(x11,x12,…,x1n)与 b(x21,x22,…,x2n)间的曼哈顿距离
+> $$d12 = \sum_{i}^{n} |x_1k - x_2k|$$
+* 3.信息熵
+  > 信息熵是衡量分布的混乱程度或分散程度的一种度量。分布越分散(或者说分布越平均)，信息熵就越大。分布越有序（或者说分布越集中），信息熵就越小。
+  > 计算给定的样本集X的信息熵的公式：
+  > $$Entropy(X) = \sum_{i}^{n}-p_ilog_2p_i$$
