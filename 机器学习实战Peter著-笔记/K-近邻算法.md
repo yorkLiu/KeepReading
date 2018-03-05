@@ -35,6 +35,10 @@
 
 >        newValue = (oldValue - min) / (max - min)  
 
+## 总结
+实际使用 KNN对手写数字识别时，算法的执行效率并不高。国为算法需要为每个测试向量做大约2000次距离的计算,每个距离计算包括了1024个维度的浮点运算，总计要执行 900次，此外，我们还需要为测试向量准备2MB的存储空间。
+
+是否存在一种算法减少存储空间和计算时间的开销呢？k决策树就是k-近邻算法的优化版, 可以节省大量的计算开销!
 
 ## 示例代码
 - [KNN 实现示例代码](https://github.com/yorkLiu/KeepReading/blob/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E6%88%98Peter%E8%91%97-%E7%AC%94%E8%AE%B0/Code/kNN.ipynb)
