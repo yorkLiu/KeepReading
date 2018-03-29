@@ -16,11 +16,8 @@
 - **Apriori定律2**: 如果一个集合不是频繁项集，则它的所有超集都不是频繁项集。  
   > 例如：假设集合{A}不是频繁项集，即A出现的次数小于 min_support，则它的任何超集如{A,B}出现的次数必定小于min_support，因此其超集必定也不是频繁项集。
 
-
-
-
-
-
+## 示例代码
+- [Apriori 算法推导](https://github.com/yorkLiu/KeepReading/blob/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E6%88%98Peter%E8%91%97-%E7%AC%94%E8%AE%B0/Code/Apriori.ipynb)
 
 
 
