@@ -20,8 +20,12 @@
 - [Apriori 算法推导](https://github.com/yorkLiu/KeepReading/blob/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E6%88%98Peter%E8%91%97-%E7%AC%94%E8%AE%B0/Code/Apriori.ipynb)
 
 
-
 ## 总结
 每次增加频繁项集的大小，Apriori算法都会重新扫描整个数据集。当数据集很大时，这会显著降低止频繁项集发现的速度。
 
 下一章将会介绍 FPgrowth算法，与Apriori算法相比，该算法只需要对数据进行两次遍历，能显著加快发现频繁项集的速度。
+
+---------
+参考：
+* https://blog.csdn.net/baimafujinji/article/details/53456931
+* https://blog.csdn.net/baimafujinji
