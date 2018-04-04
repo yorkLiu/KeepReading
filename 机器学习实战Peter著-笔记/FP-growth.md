@@ -18,6 +18,7 @@ FP-growth算法发现频繁项集的基本过程如下：
 
 ## 示例
   [FP-Growth 算法实现及从新闻网站点击流中挖掘新闻报道 示例](https://github.com/yorkLiu/KeepReading/blob/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E6%88%98Peter%E8%91%97-%E7%AC%94%E8%AE%B0/Code/FP-Growth.ipynb)
+
   **注意** 关于程序中用到的 **kosarak.dat** 文件，可以从我的百度盘中获取，或者其它地方获取
   [kosarak.dat 百度盘下载](https://pan.baidu.com/s/17eH1kMEV3wzsdLAiz1KVTQ)
 

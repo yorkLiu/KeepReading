@@ -9,6 +9,6 @@
   * [K-近邻算法(KNN)](K-近邻算法.md)
   * [决策树](决策树.md)
 
-
 ### 无监督学习算法
-  * [Apriori](Apriori.md)
+  * [使用Apriori算法进行关联分析](Apriori.md)
+  * [使用FP-growth算法来高效发现频繁项集](FP-growth.md)
