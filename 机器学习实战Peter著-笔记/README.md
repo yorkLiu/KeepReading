@@ -12,3 +12,4 @@
 ### 无监督学习算法
   * [使用Apriori算法进行关联分析](Apriori.md)
   * [使用FP-growth算法来高效发现频繁项集](FP-growth.md)
+  * [PCA降维算法](PCA.md)
