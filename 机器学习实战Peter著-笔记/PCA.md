@@ -16,3 +16,6 @@
 
 ## 总结
   降维技术使得数据变得更易使用，并且它们往往能够去除数据中的噪声，使得其他机器学习任务更加精确。降维往往作为预处理步骤，在数据应用到其他算法之前清洗数据。有很多技术可以用于数据降维，在这些技术中，ICA, FA和PCA都是比较流行的，其它又以 PCA应用最为广泛。
+
+## PCA 算法推导
+  [PCA 算法推导](https://github.com/yorkLiu/KeepReading/blob/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E6%88%98Peter%E8%91%97-%E7%AC%94%E8%AE%B0/Code/PCA.ipynb)
